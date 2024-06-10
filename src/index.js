@@ -1,7 +1,7 @@
-import node1 from "./nodes/node-1";
-import node2 from "./nodes/node-2";
+import oidcProviderClientConfig from "@nodes/oidc-provider-client-config";
+import oidcProvider from "@nodes/oidc-provider";
 
 export default function (RED) {
-  node1(RED);
-  node2(RED);
+  oidcProviderClientConfig(RED);
+  oidcProvider(RED);
 }

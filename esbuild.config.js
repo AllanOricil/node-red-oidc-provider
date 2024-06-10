@@ -60,16 +60,12 @@ function bundleHTML() {
 }
 
 async function bundleJS() {
-  const packageJsonData = fs.readFileSync("./package.json", "utf-8");
-  const { dependencies } = JSON.parse(packageJsonData);
-
   await esbuild.build({
     entryPoints: ["src/index.js"],
     bundle: true,
     platform: "node",
     format: "cjs",
     outfile: path.join(DIST_FOLDER, "index.js"),
-    external: Object.keys(dependencies),
     sourcemap: true,
   });
   console.log("- js bundled successfully");

@@ -1,43 +1,26 @@
-# Custom Node-red Node ES Template
+# Node-red OIDC Provider node
 
-![custom-nodes](./images/custom-nodes.png)
+With this node, you can easily set up an [OIDC (OpenID Connect) Authentication Server](https://openid.net/specs/openid-connect-core-1_0-errata2.html).
 
-## Directory Structure
+<img src="./images/oidc-server-sample-flow-1.png" alt="custom-nodes" width="600" >
 
-```bash
-node-red-node-es-template/
-├── assets/
-│   ├── icons/
-│   │   └── icon.png
-│   └── locales/
-│       ├── de/
-│       │   ├── index.hmtl
-│       │   └── index.json
-│       └── en-US/
-│           ├── index.html
-│           └── index.json
-├── dist/
-│   ├── icons/
-│   │   └── icon.png
-│   ├── locales/
-│   │   ├── de/
-│   │   │   ├── index.hmtl
-│   │   │   └── index.json
-│   │   └── en-US/
-│   │       ├── index.html
-│   │       └── index.json
-│   ├── index.html
-│   ├── index.js
-│   └── index.js.map
-├── src/
-│   ├── nodes/
-│   │   ├── node-1/
-│   │   │   ├── index.js
-│   │   │   └── index.html
-│   │   └── node-2/
-│   │       ├── index.js
-│   │       └── index.html
-│   └── index.js
-├── package.json
-└── package-lock.json
-```
+### Palette view
+
+<img src="./images/oidc-provider-node.png" alt="custom-nodes" width="200" >
+
+### /.well-known/openid-configuration response
+
+<img src="./images/oidc-server-demo-1.png" alt="custom-nodes" width="1200" >
+
+### Forms
+
+> [!WARNING]
+> The following forms are an initial implementation.
+
+#### oidc-provider-node
+
+<img src="./images/oidc-provider-node-sample-1.png" alt="custom-nodes" width="500" >
+
+#### oidc-provider-config-node
+
+<img src="./images/oidc-provider-config-node-sample-1.png" alt="custom-nodes" width="500" >
