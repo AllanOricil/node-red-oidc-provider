@@ -6,7 +6,6 @@
 .prettierignore
 .npmrc
 assets
-images
 node_modules
 src
 jsconfig.json
