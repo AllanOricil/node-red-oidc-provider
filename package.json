@@ -1,6 +1,6 @@
 {
   "name": "@allanoricil/node-red-oidc-provider",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "it creates an oidc provider in node-red",
   "main": "dist/index.js",
   "type": "commonjs",
