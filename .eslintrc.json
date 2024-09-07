@@ -11,5 +11,12 @@
   },
   "rules": {
     "prettier/prettier": "error"
+  },
+  "globals": {
+    "RED": true,
+    "$": "readonly",
+    "document": "readonly",
+    "window": "readonly",
+    "navigator": "readonly"
   }
 }

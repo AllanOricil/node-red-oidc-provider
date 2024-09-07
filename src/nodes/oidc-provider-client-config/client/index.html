@@ -1,0 +1,108 @@
+<template>
+  <div class="form-row">
+    <label for="node-config-input-name"><i class="fa fa-tag"></i> Name</label>
+    <input type="text" id="node-config-input-name" placeholder="Name" />
+  </div>
+  <div class="form-row">
+    <div style="display: flex; align-items: center">
+      <label for="node-config-input-clientId">
+        <i class="fa fa-id-badge"></i> Client ID
+      </label>
+      <input
+        type="text"
+        id="node-config-input-clientId"
+        placeholder="Client ID"
+      />
+      <button
+        id="node-config-copy-clientId"
+        type="button"
+        class="ui-button primary"
+        style="width: 60px"
+      >
+        Copy
+      </button>
+    </div>
+  </div>
+  <div class="form-row">
+    <div style="display: flex; align-items: center">
+      <label for="node-config-input-clientSecret">
+        <i class="fa fa-key"></i> Client Secret
+      </label>
+      <input
+        type="password"
+        id="node-config-input-clientSecret"
+        placeholder="Client Secret"
+        style="flex: 1; margin-right: 10px"
+      />
+      <button
+        id="node-config-show-clientSecret"
+        type="button"
+        class="ui-button primary"
+        style="width: 60px"
+      >
+        Show
+      </button>
+      <button
+        id="node-config-copy-clientSecret"
+        type="button"
+        class="ui-button primary"
+        style="width: 60px"
+      >
+        Copy
+      </button>
+    </div>
+  </div>
+  <div class="form-row">
+    <label style="text-wrap: nowrap">
+      <i class="fa fa-link"></i> Redirect URIs
+    </label>
+    <ul id="node-config-redirectUris-list"></ul>
+    <button
+      type="button"
+      class="node-config-add-item ui-button"
+      data-list="redirectUris"
+    >
+      +
+    </button>
+  </div>
+  <div class="form-row">
+    <label for="node-config-input-grantTypes">
+      <i class="fa fa-lock"></i> Grant types
+    </label>
+    <input type="text" id="node-config-input-grantTypes" style="width: 100%" />
+  </div>
+  <div class="form-row">
+    <label for="node-config-input-responseTypes" style="text-wrap: nowrap">
+      <i class="fa fa-code"></i> Response types
+    </label>
+    <input
+      type="text"
+      id="node-config-input-responseTypes"
+      style="width: 100%"
+    />
+  </div>
+  <div class="form-row">
+    <label for="node-config-input-scopes">
+      <i class="fa fa-eye"></i> Scopes
+    </label>
+    <input
+      type="text"
+      id="node-config-input-scopes"
+      placeholder="openid email phone"
+      style="width: 100%"
+    />
+  </div>
+  <div class="form-row">
+    <label style="text-wrap: nowrap">
+      <i class="fa fa-eye"></i> Custom Scopes
+    </label>
+    <ul id="node-config-customScopes-list"></ul>
+    <button
+      type="button"
+      class="node-config-add-item ui-button"
+      data-list="customScopes"
+    >
+      +
+    </button>
+  </div>
+</template>

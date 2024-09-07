@@ -1,13 +1,13 @@
+import { Node } from "@allanoricil/node-red-node";
 import Provider from "oidc-provider";
 
-export default function (RED) {
-  function oidcProvider(config) {
-    RED.nodes.createNode(this, config);
-
+export default class OidcProvider extends Node {
+  constructor(config) {
+    super(config);
     this.route = config.route;
-    this.issuer = `${RED.settings.https ? "https" : "http"}://${RED.httpNode.get("host") || "localhost"}:${RED.httpNode.get("port") || "1880"}`;
-    console.log(this.issuer);
-    this.oidcConfig = RED.nodes.getNode(config.config);
+    this.issuer = `${OidcProvider.RED.settings.https ? "https" : "http"}://${OidcProvider.RED.httpNode.get("host") || "localhost"}:${OidcProvider.RED.httpNode.get("port") || "1880"}`;
+    this.oidcConfig = OidcProvider.RED.nodes.getNode(config.config);
+
     if (this.oidcConfig) {
       this.clientId = this.oidcConfig.clientId;
       this.clientSecret = this.oidcConfig.credentials.clientSecret;
@@ -45,8 +45,6 @@ export default function (RED) {
     };
 
     const oidcProvider = new Provider(this.issuer, oidcProviderConfig);
-    RED.httpNode.use(this.route, oidcProvider.callback());
+    OidcProvider.RED.httpNode.use(this.route, oidcProvider.callback());
   }
-
-  RED.nodes.registerType("OIDC Provider", oidcProvider);
 }
