@@ -1,6 +1,6 @@
 {
   "name": "@allanoricil/node-red-oidc-provider",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "It creates an oidc provider in node-red",
   "repository": {
     "type": "git",
