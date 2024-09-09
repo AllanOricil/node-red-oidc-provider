@@ -5,11 +5,16 @@
 .eslintignore
 .prettierignore
 .npmrc
+.nrg
+node-red
 assets
 node_modules
+logs
 src
 jsconfig.json
 bitbucket-pipelines.yml
 commitlint.config.js
 esbuild.config.js
+nrg.config.js
+release.config.js
 
