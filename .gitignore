@@ -52,3 +52,8 @@ Thumbs.db
 data-storage
 
 .nrg
+
+node-red
+!node-red/flows.json
+!node-red/package.json
+!node-red/settings.json

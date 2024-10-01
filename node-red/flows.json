@@ -1,31 +1,31 @@
 [
-  {
-    "id": "c3164b9229a6579b",
-    "type": "tab",
-    "label": "Flow 1",
-    "disabled": false,
-    "info": "",
-    "env": []
-  },
-  {
-    "id": "4d57df5ccd220923",
-    "type": "oidc-provider-client-config",
-    "name": "test config",
-    "clientId": "a272628d-2c46-437c-9185-7ec4b213b333",
-    "redirectUris": [],
-    "grantTypes": "authorization_code",
-    "responseTypes": "code",
-    "scopes": "openid",
-    "customScopes": []
-  },
-  {
-    "id": "11ef4c6910328347",
-    "type": "oidc-provider",
-    "z": "c3164b9229a6579b",
-    "route": "/oidc",
-    "config": "4d57df5ccd220923",
-    "x": 450,
-    "y": 280,
-    "wires": []
-  }
+    {
+        "id": "c3164b9229a6579b",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "4d57df5ccd220923",
+        "type": "oidc-provider-client-config",
+        "name": "test config",
+        "clientId": "a272628d-2c46-437c-9185-7ec4b213b333",
+        "redirectUris": [],
+        "grantTypes": "authorization_code",
+        "responseTypes": "code",
+        "scopes": "openid",
+        "customScopes": []
+    },
+    {
+        "id": "11ef4c6910328347",
+        "type": "oidc-provider",
+        "z": "c3164b9229a6579b",
+        "route": "/oidc",
+        "config": "4d57df5ccd220923",
+        "x": 450,
+        "y": 280,
+        "wires": []
+    }
 ]

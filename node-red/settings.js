@@ -1,7 +1,7 @@
 module.exports = {
   flowFile: "flows.json",
   flowFilePretty: true,
-  uiPort: 1882,
+  uiPort: 1880,
   diagnostics: {
     enabled: true,
     ui: true,
