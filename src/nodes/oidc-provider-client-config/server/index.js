@@ -1,4 +1,4 @@
-import { Node } from "@allanoricil/node-red-node";
+import { Node } from "@allanoricil/nrg-nodes";
 import { v4 as uuidv4 } from "uuid";
 import srs from "secure-random-string";
 

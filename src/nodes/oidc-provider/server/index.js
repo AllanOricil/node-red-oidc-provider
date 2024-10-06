@@ -1,4 +1,4 @@
-import { Node } from "@allanoricil/node-red-node";
+import { Node } from "@allanoricil/nrg-nodes";
 import Provider from "oidc-provider";
 
 export default class OidcProvider extends Node {
